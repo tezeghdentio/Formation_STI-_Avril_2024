@@ -1,0 +1,4 @@
+function verif()
+{
+    alert("bnj");
+}
