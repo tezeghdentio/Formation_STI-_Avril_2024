@@ -18,5 +18,9 @@ function verif()
     {
         alert("vérifier les champs obligatoires");
     }
+    else if(!est_mail_vailde(email))
+        {
+            alert("Veuillez vérifier SVP votre Email");
+        }
 
 }
