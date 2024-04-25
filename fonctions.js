@@ -1,3 +1,32 @@
+est_mail_vailde(ch)
+{
+    var test=true;
+    if((ch.indexOf("@") < 1 )||((ch.indexOf("@")==(ch.length)-1)) )
+    {
+     test= false;
+    }
+    else
+    {
+     var username = ch.substr(0,ch.indexOf('@'));
+     var domain =ch.substr(ch.lastIndexOf('.')+1,(ch.length)-(ch.lastIndexOf('.'))+1);
+     alert(domain);
+     if(domain.length<2)
+     {
+         test= false;
+     }
+     else
+     {
+         if((username.length<10)||(username.length>50))
+         {
+             test= false;
+         }
+
+     }
+
+    }
+
+ return(test);
+}
 function verif()
 {
     //recuperation des valeurs des variable du formulaire 
@@ -22,5 +51,9 @@ function verif()
         {
             alert("Veuillez vérifier SVP votre Email");
         }
+        else if(now()-date<18)
+            {
+                alert("vous devez avoir 18 ans");
+            }
 
 }
