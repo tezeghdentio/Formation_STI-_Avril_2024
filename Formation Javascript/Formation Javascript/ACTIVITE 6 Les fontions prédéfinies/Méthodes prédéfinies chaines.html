@@ -1,0 +1,43 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="fr">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Méthodes prédéfinies chaines</title>
+<script>
+function changer()
+    {
+        t1=f.t1.value;
+        t1=t1.trim();
+        T=t1.split(" ");
+        ch="";
+       
+        for(i=0;i<T.length;i++)
+            {
+            c=T[i];
+            c1=c.charAt(0).toUpperCase();
+            c1=c1+c.substr(1);
+            ch=ch+c1+" ";
+            }
+        ch=ch.trim();
+        ch=ch.replace(/Noir/g,"Bleu");
+        f.res.value=ch;
+    }
+        
+</script>
+</head>
+
+<body>
+<p align="center"><b><font size="7">Objet Nombre</font></b></p>
+<form name="f">
+		<p align="center"><b>Enlever les espaces de début et de fin, rendre le début de chaque mot en majuscule, changer noir en bleu:<input type="textarea" name="t1" size=100 value="    j'ai acheté un ordinateur portable noir avec un sac à dos noir    "></b></p>
+    
+    <p align="center"><b>Expression:</b> <input type="button" value="Changer" onclick="changer()">   <b>Résultat:<input type="textarea" size=100 name="res" ></b></p>
+    
+  
+    
+    
+</form>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<html> 
+
+     <head> 
+     <title> Les variables - les entrées- les sorties </title> 
+
+     <script language="JavaScript"> 
+	    
+		/*var m;
+		var a =5;                    
+		var b = 2.5;
+		var r= ((a+b)-3)*2/3;
+		var M = " plus ";
+		m = "  est égal à  " ;
+		alert( "r =((a+b)-3)*2/3="+m+r);
+		
+		*/
+		
+		/*
+		var x =5;
+		var y = 6;
+		var z =true;
+		var w = false;
+		var res= (((x>=y) && (z) ) ||(w)) != true;
+		alert(res);
+		
+		*/
+		
+		
+		
+		
+		/*
+		var i =2;
+		var j = 3 ;
+		i++; 
+		document.write( "i="+i+"<br>");
+		++i;
+		document.write( "i="+i+"<br>");
+		j--;
+		document.write( "j="+j+"<br>");
+		--j;
+		document.write( "j="+j+"<br>");
+		i+=j;
+		document.write( "i="+i+"<br>");
+		j-=i;
+		document.write( "j="+j+"<br>");
+		*/
+		
+		
+		
+		
+		/*
+				
+		    var ch= String (window.prompt("Donner une chaîne de caractères (au min 10 caract)"));
+	        document.write("La valeur saisie est stockée dans la variable ch <br> ch="+ch+"<br>");
+			document.write("La longueur de la chîne de caractères ch = "+ch.length+"<br>");
+	        document.write("ch[1]= "+ch.charAt(1)+"<br>");
+			document.write("ch[0]= "+ch.charAt(0)+"<br>");
+			document.write("ch["+ch.length+"]="+ch.charAt((ch.length)-1)+"<br>");
+			var ch2 =ch.substr(3, 4);			
+			document.write("La sous chaîne ch2 ="+ch2+"<br>");
+			document.write("La sous chaîne laur est à la position "+ch.indexOf("laur",1)+" dans la chaîne"+ch+"<br>");
+		*/
+		
+		
+		
+		
+		/*
+			var v= Number(window.prompt("Donner un nombre"));
+	        document.write("la valeur saisie est stockée dans la variable v <br> v="+v+"<br>" );		
+			document.write("La valeur absolue  de  "+v+" est" +Math.abs(v)+"<br>");
+			document.write("La valeur arrondie  de "+v+" est "+Math.round(v)+"<br>");
+	        document.write("La racine carrée de la valeur absolue de "+v+" est "+Math.sqrt(Math.abs(v))+"<br>");          
+		    
+		*/
+		
+		
+						  
+						  
+     </script> 
+
+     </head> 
+
+<body> 
+
+</body> 
+</html>

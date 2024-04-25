@@ -1,0 +1,63 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="fr">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Méthodes prédéfinies</title>
+<script>
+function somme()
+    {
+        a1=f.a1.value;
+        a2=f.a2.value;
+        if(isNaN(a1)||isNaN(a2)||a1==""||a2=="")
+            {alert('Ecrire un nombre');
+            return false;}
+        a1=Number(a1);
+        a2=Number(a2);
+        res=a1+a2;
+        alert(res);
+        
+        f.c.value=a1.toString()+a2.toString();
+        
+    }
+    
+    function evaluer()
+    {
+        exp=f.e.value;
+        f.res.value=eval(exp);
+    }
+    
+    function conv1()
+    {
+        c1=f.c1.value;
+        f.res2.value=parseInt(c1);
+    }
+    
+    function conv2()
+    {
+        c2=f.c2.value;
+        f.res3.value=parseFloat(c2);
+    }
+</script>
+</head>
+
+<body>
+<p align="center"><b><font size="7">Objet Nombre</font></b></p>
+<form name="f">
+		<p align="center"><b>A1:<input type="text" name="a1" size="20"></b></p>
+	<p align="center"><b>A2:<input type="text" name="a2" size="20"></b></p>
+		<p align="center">
+    <input type="button" value="a1 + a2" onclick="somme()">
+         </p>   
+    <p align="center"><b>Concaténation de A1 et A2:<input type="text" name="c" size="20"></b></p>
+    
+    <p align="center"><b>Expression:<input type="text" name="e" size="20"></b> <input type="button" value="Evaluer" onclick="evaluer()">   <b>Résultat:<input type="text" name="res" size="20"></b></p>
+    
+    <p align="center"><b>Ecrire des nombres:<input type="text" name="c1" size="20"></b> <input type="button" value="parseInt()" onclick="conv1()">   <b>Résultat:<input type="text" name="res2" size="20"></b></p>
+    
+    <p align="center"><b>Ecrire des nombres:<input type="text" name="c2" size="20"></b> <input type="button" value="parseFloat()" onclick="conv2()">   <b>Résultat:<input type="text" name="res3" size="20"></b></p>
+    
+</form>
+</body>
+
+</html>

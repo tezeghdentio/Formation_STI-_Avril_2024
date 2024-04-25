@@ -1,0 +1,38 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Nouvelle page 1</title>
+<script language="javascript">
+
+function test(){ 
+var selectione=""; 
+var Num=0; 
+
+for (i=0; i<document.f.choix.options.length; i++) { 
+  if (document.f.choix.options[i].selected ) { 
+    Num=Number(Num+1); 
+    selectione = selectione+"; "+document.f.choix.options[i].text; 
+  } 
+} 
+alert(Num+" choix : "+selectione); 
+} 
+</script>
+</head>
+
+<body>
+
+<p>&nbsp;</p>
+<form name ="f" method="POST" action="">
+	<p><select size="4" name="choix" multiple>
+	<option value="LPD">LPD</option>
+	<option value="PC">Pension complete</option>
+	<option value="DP">Demi pension</option>
+	</select></p>
+	<p>&nbsp;</p>
+	<p><input type="submit" value="Envoyer" onclick="test(); return false;" name="B1"><input type="reset" value="Rétablir" name="B2"></p>
+</form>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<html> 
+
+     <head> 
+     <title> Les structures de contrôle itératives </title> 
+
+     <script language="JavaScript"> 
+		
+		/*
+		
+		var x= Number (window.prompt("Un entier positif:"));
+	    var n= Number (window.prompt("Un deuxième entier positif:"));
+		var i;
+		var p=1;
+		for( i=1;i<=n;i++)
+		{
+		   p=p*x;
+		}
+		document.write(x+"^"+n+"= "+p+"<br>");
+		*/
+		
+		
+		
+		
+		
+		
+		/*
+		var m,n;
+		
+		
+		do
+		{
+			 var a = Number (window.prompt("Un entier strictement positif:"));
+	         var b = Number (window.prompt("Un deuxième entier strictement positif:"));
+			 
+		} while( (a<=0) || (b<=0));
+		m=a;
+		n=b;
+		
+		while(a!=b)
+		{
+			if(a>b)
+			 {
+			   a=a-b;
+			 }
+	      		else
+			 {
+			    b=b-a;
+			 }
+			 
+		}
+		document.write("PGCD("+m+","+n+")="+a+"<br>");
+		*/
+		
+		
+     </script> 
+
+     </head> 
+
+<body> 
+
+</body> 
+</html>

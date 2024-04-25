@@ -1,0 +1,48 @@
+<html> 
+
+     <head> 
+     <title> Les fonctions	 </title> 
+
+     <script language="JavaScript"> 
+                             
+		function saisie(r)
+		{
+		 
+		do
+		 {
+		   r =window.prompt("Donner une valeur d'un rayon d'un cercle =");
+		 
+		 }while(r<=0);
+		 return r;
+		}
+		
+		
+		
+         function surface(r)
+		{
+		 return r*r*Math.PI;
+		}
+         
+
+
+		
+	
+     </script> 
+
+     </head> 
+
+<body>
+
+           <script language="JavaScript"> 
+                  var v ;           
+		         window.document.write("La surface du cercle= "+surface(saisie(v)));
+				 
+	           
+            </script>
+
+
+
+ 
+	
+</body> 
+</html>
